@@ -14,16 +14,12 @@ Wine.collection.drop();
 // Create the models
 User
   .create([{
-    firstName: 'Ed',
-    lastName: 'Brodie',
     username: 'EddyB',
     email: 'ed@ed.com',
     password: 'password',
     passwordConfirmation: 'password'
   } ,
   {
-    firstName: 'bob',
-    lastName: 'bobber',
     username: 'bobbyb',
     email: 'bob@bob.com',
     password: 'password',
@@ -38,11 +34,8 @@ User
         pairings: 'bacon',
         tastingNotes: 'really quite special... i need more of this now please',
         buyLink: 'www.google.com',
-        images: [{
-          url: 'https://i.pinimg.com/originals/1c/52/25/1c522569bc380d65fc08fc8824fdcbd5.png',
-          caption: 'vape reviews!'
-        }]
-
+        images: 'https://i.pinimg.com/originals/1c/52/25/1c522569bc380d65fc08fc8824fdcbd5.png',
+        caption: 'vape reviews!'
 
 
 

@@ -10,10 +10,12 @@
     <input type="hidden" name="_method" value="DELETE">
     <button class="button alert">Delete</button>
     </form>
-    <div class="card-img-top" style="background-image:url(<%= wine.images[0] %>)" alt="<%= wine.name %>"></div>
+
+    <img class = "img-fluid"src="<%= wine.images %>" alt="<%= wine.name %>">
     <% } %>
 
     <p>
+      <img class = "img-fluid"src="<%= wine.images %>" alt="<%= wine.name %>">
       <%= wine.name%><br>
       <%= wine.pairings %><br>
       <%= wine.tastingNotes %><br>
