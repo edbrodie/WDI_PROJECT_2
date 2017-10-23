@@ -1,0 +1,14 @@
+<h1> <%= user.username %>'s Wine List...</h1>
+<%# <div class="row">%>
+
+<% wines.forEach((wine) => { %>
+
+  <a href="/wines/<%= wine.id %>">
+  <img src="<%- wine.image %>" alt="<%= wine.name %> image missing">
+  <h2><%= wine.name %></h2></a>
+  <h3> Region: <%= wine.region %></h3>
+  <h3> Recommended pairings: <%= wine.pairings %><br></h3>
+  <h3> Tasting notes:   <%= wine.tastingNotes %><br></h3>
+  <h3> Buy here:   <%= wine.buyLink %><br> </h3>
+
+  <% }) %>

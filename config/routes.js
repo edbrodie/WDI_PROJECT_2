@@ -1,25 +1,46 @@
 const express = require('express');
 const router  = express.Router();
+const registration = require('../controllers/registration');
+const session = require('../controllers/session');
+const winesController = require('../controllers/wines');
 
 // A home route
 router.get('/', (req, res) => res.render('homepage'));
 
-// RESTful routes
-// All URLS should contain the PLURAL... don't chose octopus or people or something silly.
 
-// INDEX
+router.route('/register')
+  .get(registration.new)
+  .post(registration.create);
 
-// NEW
+router.route('/login')
+  .get(session.new)
+  .post(session.create);
 
-// SHOW
+router.route('/logout')
+  .get(session.delete);
 
-// CREATE
 
-// EDIT
+router.route('/wines')
+  .get(winesController.index)
+  .post(winesController.create);
 
-// UPDATE
+router.route('/wines/new')
+  .get(winesController.new);
 
-// DELETE
+router.route('/wines/:id')
+  .get(winesController.show)
+  .put(winesController.update)
+  .delete(winesController.delete);
 
+router.route('/wines/:id/edit')
+  .get(winesController.edit);
+
+router.route('/wines/:id/comments')
+  .post(winesController.createComment)
+  .delete(winesController.deleteComment);
+
+
+
+router.all('*', (req, res) => res.notFound());
 
 module.exports = router;

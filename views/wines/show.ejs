@@ -1,0 +1,21 @@
+
+
+<div class="col-lg-12">
+  <h2><%= wine.name %></h2>
+  <img class = "img-fluid"src="<%= wine.image %>" alt="<%= wine.name %>">
+
+  <% if(locals.isAuthenticated && wine.belongsTo(user)) { %>
+    <a href="/wines/<%= wine.id %>/edit" class="button">Edit</a>
+
+    <form method="POST" action="/wines/<%= wine.id %>">
+      <input type="hidden" name="_method" value="DELETE">
+      <button class="button alert">Delete</button>
+    </form>
+  <% } %>
+
+  <p>
+    <%= wine.name%><br>
+    <%= wine.pairings %><br>
+    <%= wine.tastingNotes %><br>
+    <%= wine.buyLink %><br>
+  </p>
