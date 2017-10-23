@@ -6,16 +6,16 @@
 
   <% if(locals.isAuthenticated && wine.belongsTo(user)) { %>
     <a href="/wines/<%= wine.id %>/edit" class="button">Edit</a>
-
     <form method="POST" action="/wines/<%= wine.id %>">
-      <input type="hidden" name="_method" value="DELETE">
-      <button class="button alert">Delete</button>
+    <input type="hidden" name="_method" value="DELETE">
+    <button class="button alert">Delete</button>
     </form>
-  <% } %>
+    <div class="card-img-top" style="background-image:url(<%= wine.images[0] %>)" alt="<%= wine.name %>"></div>
+    <% } %>
 
-  <p>
-    <%= wine.name%><br>
-    <%= wine.pairings %><br>
-    <%= wine.tastingNotes %><br>
-    <%= wine.buyLink %><br>
-  </p>
+    <p>
+      <%= wine.name%><br>
+      <%= wine.pairings %><br>
+      <%= wine.tastingNotes %><br>
+      <%= wine.buyLink %><br>
+    </p>
