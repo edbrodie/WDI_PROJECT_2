@@ -1,5 +1,12 @@
+// HELPERS
+@import "helpers/reset";
+@import "helpers/variables";
+
+// COMPONENTS
+@import "partials/generic";
+
 body {
-  background: $body-background;
+  background: blue;
   font-family: Helvetica,Arial,sans-serif;
   font-size: 14px;
   text-align: center;

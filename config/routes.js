@@ -39,6 +39,11 @@ router.route('/wines/:id/comments')
   .post(winesController.createComment)
   .delete(winesController.deleteComment);
 
+router.route('/wines/:id/comments')
+  .post(winesController.createComment);
+
+router.route('/wines/:id/comments/:commentId')
+  .delete(winesController.deleteComment);
 
 
 router.all('*', (req, res) => res.notFound());
