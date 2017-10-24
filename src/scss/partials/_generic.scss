@@ -1,13 +1,20 @@
-// HELPERS
-@import "helpers/reset";
-@import "helpers/variables";
-
-// COMPONENTS
-@import "partials/generic";
 
 body {
-  background: blue;
+  background-image: url(vinyard1.jpg);
+  background-size: cover;
   font-family: Helvetica,Arial,sans-serif;
   font-size: 14px;
   text-align: center;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+form {
+  background-color: black;
+  opacity: 0.4;
+  padding: 20px;
+  margin: 20px;
 }
