@@ -35,7 +35,7 @@ User
         pairings: 'bacon',
         tastingNotes: 'really quite special... i need more of this now please',
         buyLink: 'www.google.com',
-        images: 'https://i.pinimg.com/originals/1c/52/25/1c522569bc380d65fc08fc8824fdcbd5.png',
+        image: 'https://i.pinimg.com/originals/1c/52/25/1c522569bc380d65fc08fc8824fdcbd5.png',
         caption: 'vape reviews!'
       },{
         createdBy: users [0],
@@ -44,7 +44,7 @@ User
         pairings: 'marmite',
         tastingNotes: 'I wouldn\'t recommend this - really not tasty at all.',
         buyLink: 'www.google.com',
-        images: 'https://www.strictlywine.co.uk/1817-thickbox_default/barossa-shiraz-reserve-berton.jpg'  }]);
+        image: 'https://www.strictlywine.co.uk/1817-thickbox_default/barossa-shiraz-reserve-berton.jpg'  }]);
   })
   .then((wines) => console.log(`${wines.length} new and tasty wines created`))
   .catch((err) => console.log(err))
