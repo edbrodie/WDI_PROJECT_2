@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-    <div class ="row">
-    <a href="/wines/new" class="col-lg-12 col-md-12 btn btn-light">Add a new wine</a>
-</div>
-<h1> Your Wine List...</h1>
-<%# <div class="row">%>
-
-<% wines.forEach((wine) => { %>
-<div class="winesIndex">
-
-  <img src="<%= wine.image %>" alt="<%= wine.name %> image missing" height=300px width=300px>
-    <a href="/wines/<%= wine.id %>"><h2><%= wine.name %></h2></a>
-  <h3> Region: <%= wine.region %></h3>
-  <h3> Recommended pairings: <%= wine.pairings %></h3>
-  <h3> Tasting notes:   <%= wine.tastingNotes %></h3>
-  <h3> Buy here:   <%= wine.buyLink %> </h3>
-  <small>Added by: <%= wine.createdBy.username %></small>
-  </br>
-</div>
-  <% }) %>
-</br>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
 
 
+  <a href="/wines/new" class="btn btn-light">Add a new wine</a>
 
 
+  <h1> Your Wine List...</h1>
+
+    <% wines.forEach((wine) => { %>
+      <div class="winesIndex">
+      <img src="<%= wine.image %>" alt="<%= wine.name %> image missing" height=250px width=250px>
+      <a href="/wines/<%= wine.id %>"><h2><%= wine.name %></h2></a>
+      <h3> Region: <%= wine.region %></h3>
+      <h3> Recommended pairings: <%= wine.pairings %></h3>
+      <h3> Tasting notes:   <%= wine.tastingNotes %></h3>
+      <h3>Posted by: <%= wine.createdBy.username %></h3>
+      <button class="buyButton" onclick="location.href='<%= wine.buyLink %>'" type="button">
+      Buy here!</button>
+      </br>
+      </div>
+
+      <% }) %>
+    </br>
   </body>
-</html>
+  </html>

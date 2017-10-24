@@ -1,3 +1,23 @@
 .winesIndex {
-  margin: 50px;
+
+  width: 33.33%;
+  float: left;
+  text-align: left;
+  color: white;
+}
+
+h3 {
+  padding: 10px;
+  width: 100%;
+}
+
+.buyButton {
+  color: white;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  padding: 2px;
+  height: 32px;
+  width: 100px;
+
 }
