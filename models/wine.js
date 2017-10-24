@@ -16,7 +16,7 @@ const wineSchema = new mongoose.Schema({
   pairings: { type: String },
   tastingNotes: { type: String },
   buyLink: { type: String },
-  images: { type: String },
+  image: { type: String },
   createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   comments: [commentSchema]
 });

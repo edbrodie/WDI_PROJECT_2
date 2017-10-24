@@ -7,13 +7,13 @@
 <% wines.forEach((wine) => { %>
 <div>
 
-  <img src="<%= wine.images %>" alt="<%= wine.name %> image missing" height=300px width=300px>
+  <img src="<%= wine.image %>" alt="<%= wine.name %> image missing" height=300px width=300px>
     <a href="/wines/<%= wine.id %>"><h2><%= wine.name %></h2></a>
   <h3> Region: <%= wine.region %></h3>
   <h3> Recommended pairings: <%= wine.pairings %></h3>
   <h3> Tasting notes:   <%= wine.tastingNotes %></h3>
   <h3> Buy here:   <%= wine.buyLink %> </h3>
-  <small>Added by: <%= wine.createdBy %></small>
+  <small>Added by: <%= wine.createdBy.username %></small>
   </br>
 </div>
   <% }) %>

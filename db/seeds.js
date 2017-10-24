@@ -29,6 +29,7 @@ User
     console.log(`${users.length} new users created`);
     return Wine
       .create([{
+        createdBy: users [0],
         name: 'A tasty Rioja',
         region: 'London',
         pairings: 'bacon',
@@ -37,6 +38,7 @@ User
         images: 'https://i.pinimg.com/originals/1c/52/25/1c522569bc380d65fc08fc8824fdcbd5.png',
         caption: 'vape reviews!'
       },{
+        createdBy: users [0],
         name: 'A weird shiraz',
         region: 'manchester',
         pairings: 'marmite',
