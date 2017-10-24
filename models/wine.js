@@ -1,10 +1,14 @@
 const mongoose = require('mongoose');
-//
-// const imageSchema = new mongoose.Schema({
-//   url: String,
-//   caption: String
-// });
 
+const commentSchema = new mongoose.Schema({
+  createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+  content: { type: String, required: true }
+});
+
+commentSchema.methods.belongsTo = function commentBelongsTo(user) {
+  if(typeof this.createdBy.id === 'string') return this.createdBy.id === user.id;
+  return user.id === this.createdBy.toString();
+};
 
 const wineSchema = new mongoose.Schema({
   name: { type: String, required: true },
@@ -12,9 +16,10 @@ const wineSchema = new mongoose.Schema({
   pairings: { type: String },
   tastingNotes: { type: String },
   buyLink: { type: String },
-  images: { type: String }
+  images: { type: String },
+  createdBy: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+  comments: [commentSchema]
 });
-
 
 wineSchema.methods.belongsTo = function wineBelongsTo(user) {
   if(typeof this.createdBy.id === 'string') return this.createdBy.id === user.id;

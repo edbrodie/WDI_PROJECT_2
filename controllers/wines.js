@@ -76,7 +76,7 @@ function deleteRoute(req, res, next) {
     .exec()
     .then(wine => {
       if(!wine) return res.notFound();
-      if(!wine.belongsTo(req.user)) return res.unauthorized('You do not have permission to delete that resource');
+      if(!wine.belongsTo(req.user)) return res.unauthorized('Unauthorized!');
       return wine.remove();
     })
     .then(() => res.redirect('/wines'))
@@ -84,6 +84,7 @@ function deleteRoute(req, res, next) {
 }
 
 function createCommentRoute(req, res, next) {
+  console.log('comment test');
   Wine
     .findById(req.params.id)
     .exec()

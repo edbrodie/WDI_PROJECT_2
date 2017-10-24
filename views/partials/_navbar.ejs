@@ -5,18 +5,29 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-    <a class="nav-link" href="/login">Log In</a>
+    <ul class="navbar-nav">
 
-    <a class="nav-link" href="/register">Register</a>
+      <% if (!locals.isAuthenticated){ %>
 
-    <a class="nav-link" href="/logout">Log Out</a>
+        <a class="nav-link" href="/login">Log In</a>
+        <a class="nav-link" href="/register">Register</a>
 
-    <a class="nav-link" href="/wines">See your wines</a>
+        <% } %>
 
-    <a class="nav-link" href="/wines/new">Add another wine to your cellar!</a>
+        <% if (locals.isAuthenticated){ %>
 
-    </a>
-    </div>
-  </ul>
-</div>
+          <a class="nav-link" href="/logout">Log Out</a>
+
+          <a class="nav-link" href="/wines">See your wines</a>
+
+          <a class="nav-link" href="/wines/new">Add another wine to your cellar!</a>
+
+          <% } %>
+
+
+
+        </a>
+      </div>
+    </ul>
+  </div>
 </nav>

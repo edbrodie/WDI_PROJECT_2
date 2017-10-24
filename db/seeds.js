@@ -36,11 +36,6 @@ User
         buyLink: 'www.google.com',
         images: 'https://i.pinimg.com/originals/1c/52/25/1c522569bc380d65fc08fc8824fdcbd5.png',
         caption: 'vape reviews!'
-
-
-
-
-
       },{
         name: 'A weird shiraz',
         region: 'manchester',

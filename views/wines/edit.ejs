@@ -1,1 +1,31 @@
-<p> edit wine </p>
+<h1>Edit wines</h1>
+
+<form method="POST" action="/wines/<%= wine.id %>">
+  <input type="hidden" name="_method" value="PUT">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value="<%= wine.name %>">
+  </div>
+  <div>
+    <label for="region">Region</label>
+    <input type="text" name="region" id="region" value="<%= wine.region %>">
+  </div>
+  <div>
+    <label for="parings">Pairings</label>
+    <input type="text" name="parings" id="parings" value="<%= wine.parings %>">
+  </div>
+  <div>
+    <label for="tastingNotes">Tasting Notes</label>
+    <input type="text" name="tastingNotes" id="tastingNotes" value="<%= wine.tastingNotes %>">
+  </div>
+  <div>
+    <label for="buyLink">Buy here</label>
+    <input type="text" name="buyLink" id="buyLink" value="<%= wine.buyLink %>">
+  </div>
+  <div>
+    <label for="image">Image url</label>
+    <input type="text" name="image" id="image" value="<%= wine.image %>">
+  </div>
+
+  <button>Update</button>
+</form>
