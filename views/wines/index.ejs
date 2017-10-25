@@ -5,23 +5,19 @@
   <title></title>
 </head>
 <body>
-
-
-  <a href="/wines/new" class="btn btn-light">Add a new wine</a>
-
-
-  <h1> Your Wine List...</h1>
+  <h1> The Wine cellar...</h1>
 
     <% wines.forEach((wine) => { %>
       <div class="winesIndex">
-      <img src="<%= wine.image %>" alt="<%= wine.name %> image missing" height=200px width=200px>
-      <a href="/wines/<%= wine.id %>"><h2><%= wine.name %></h2></a>
+
+      <a href="/wines/<%= wine.id %>"><img class="listImage" src="<%= wine.image %>" alt="<%= wine.name %> image missing" height=200px width=200px></a>
+
+      <h4><%= wine.name %></h4>
       <h3> Region: <%= wine.region %></h3>
       <h3> Recommended pairings: <%= wine.pairings %></h3>
       <h3> Tasting notes:   <%= wine.tastingNotes %></h3>
-      <h3>Posted by: <%= wine.createdBy.username %></h3>
-      <button class="buyButton" onclick="location.href='<%= wine.buyLink %>'" type="button">
-      Buy here!</button>
+      <h3> Added by: <%= wine.createdBy.username %></h3>
+
       </br>
       </div>
 

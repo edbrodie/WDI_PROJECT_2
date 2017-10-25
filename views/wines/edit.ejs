@@ -1,31 +1,31 @@
 <h1>Edit wines</h1>
 
-<form method="POST" action="/wines/<%= wine.id %>">
+<form id="newWine" method="POST" action="/wines/<%= wine.id %>">
   <input type="hidden" name="_method" value="PUT">
-  <div>
+  <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" name="name" id="name" value="<%= wine.name %>">
+    <input class="form-control formInput" type="text" name="name" id="name"required value="<%= wine.name %>">
   </div>
-  <div>
+  <div class="form-group">
     <label for="region">Region</label>
-    <input type="text" name="region" id="region" value="<%= wine.region %>">
+    <input class="form-control formInput" type="text" name="region" id="region" required value="<%= wine.region %>">
   </div>
-  <div>
+  <div class="form-group">
     <label for="parings">Pairings</label>
-    <input type="text" name="parings" id="parings" value="<%= wine.parings %>">
+    <input class="form-control formInput" type="text" name="parings" id="parings" required value="<%= wine.parings %>">
   </div>
-  <div>
+  <div class="form-group">
     <label for="tastingNotes">Tasting Notes</label>
-    <input type="text" name="tastingNotes" id="tastingNotes" value="<%= wine.tastingNotes %>">
+    <input class="form-control formInput" type="text" name="tastingNotes" id="tastingNotes" required value="<%= wine.tastingNotes %>">
   </div>
-  <div>
+  <div class="form-group">
     <label for="buyLink">Buy here</label>
-    <input type="text" name="buyLink" id="buyLink" value="<%= wine.buyLink %>">
+    <input class="form-control formInput" type="text" name="buyLink" id="buyLink" required value="<%= wine.buyLink %>">
   </div>
-  <div>
+  <div class="form-group">
     <label for="image">Image url</label>
-    <input type="text" name="image" id="image" value="<%= wine.image %>">
+    <input class="form-control formInput" type="text" name="image" id="image" required value="<%= wine.image %>">
   </div>
 
-  <button>Update</button>
+<button class="btn confirmButton submitButton">Update</button>
 </form>

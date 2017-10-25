@@ -1,40 +1,27 @@
-<form method="POST" action="/wines">
-
-
+<form id="newWine" method="POST" action="/wines">
   <div class="form-group">
     <label for="name">Name of Wine</label>
     <input class="formInput" type="text" name="name" id="name"  required class="form-control">
   </div>
-
-
   <div class="form-group">
     <label for="region">Region</label>
-    <input class="formInput" type="text" name="region" id="region" p required class="form-control">
+    <input class="formInput" type="text" name="region" id="region" required class="form-control">
   </div>
-
-
   <div class="form-group">
     <label for="parings">Parings</label>
     <input class="formInput"  type="text" name="parings" id="parings"  required class="form-control">
   </div>
-
-
   <div class="form-group">
     <label for="tastingNotes">Tasting Notes</label>
     <input class="formInput" type="text" name="tastingNotes" id="tastingNotes"  required class="form-control">
   </div>
-
-
   <div class="form-group">
     <label for="buyLink">Buy Link</label>
     <input class="formInput" type="text" name="buyLink" id="buyLink"  required class="form-control">
   </div>
-
-
   <div class="form-group">
     <label for="image">Image URL</label>
     <input class="formInput" type="text" name="image" id="image"  required class="form-control">
   </div>
   <button class="btn confirmButton submitButton">Add Wine!</button>
-
 </form>

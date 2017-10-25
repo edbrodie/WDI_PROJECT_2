@@ -1,12 +1,26 @@
+.form-control1 {
+    display: block;
+    width: 97.5%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #FAEBD7;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
 
-form {
+#newWine {
   background-color: rgba(0,0,0,.3);
   padding: 50px;
   width: 9;
   width: 550px;
   height: 330px;
   margin: 20px;
-  color: #fff;
+  color: #FAEBD7;
   margin-left: auto;
   margin-right: auto;
 }
@@ -18,7 +32,7 @@ form {
   width: 300px;
   height: 25px;
   padding: 4px;
-  color: white;
+  color: #FAEBD7;
   border-bottom: 1px;
 }
 
