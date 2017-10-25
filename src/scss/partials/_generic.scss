@@ -19,19 +19,17 @@ html, body {
   height: 100%;
 }
 
-form {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  margin: 20px;
-  color: white;
-}
 
 #homeLabel {
   width: 47%;
-vertical-align: middle;
-background-color: rgba(0, 0, 0, 0.3);
-height: 400px;
-padding-top: 65px;
-margin-top: 80px;
-margin-bottom: 50px;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 400px;
+  padding-top: 65px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.wineIcons {
+  background-color: rgba(0, 0, 0, 0);
 }

@@ -14,7 +14,7 @@
 
     <% wines.forEach((wine) => { %>
       <div class="winesIndex">
-      <img src="<%= wine.image %>" alt="<%= wine.name %> image missing" height=250px width=250px>
+      <img src="<%= wine.image %>" alt="<%= wine.name %> image missing" height=200px width=200px>
       <a href="/wines/<%= wine.id %>"><h2><%= wine.name %></h2></a>
       <h3> Region: <%= wine.region %></h3>
       <h3> Recommended pairings: <%= wine.pairings %></h3>
@@ -24,6 +24,7 @@
       Buy here!</button>
       </br>
       </div>
+
 
       <% }) %>
     </br>
