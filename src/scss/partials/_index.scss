@@ -14,10 +14,49 @@ h3 {
 .buyButton {
   color: white;
   float: right;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.45);
   border: 0;
   padding: 2px;
   height: 32px;
   width: 100px;
+
+}
+
+button {
+  color: pink;
+}
+
+.logReg {
+  color: white;
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  padding: 10px;
+  height: 32px;
+  width: 100px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#reg {
+  margin-right: 22%;
+  margin-left: 32px;
+}
+
+#log {
+  margin-left: 22%;
+  margin-right: 32px;
+
+}
+
+.buttonText {
+  color: white;
+  font-size: 20px;
+}
+
+.buttonText:hover {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
 
 }

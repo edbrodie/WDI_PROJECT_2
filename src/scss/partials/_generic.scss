@@ -1,6 +1,10 @@
 h1 {
-  font-size: 44px;
+  font-size: 60px;
   color: white;
+  font-family: 'Oleo Script', cursive;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
 }
 body {
   background-image: url(vinyard1.jpg);
@@ -11,8 +15,8 @@ body {
 }
 
 html, body {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 form {
@@ -20,4 +24,14 @@ form {
   padding: 20px;
   margin: 20px;
   color: white;
+}
+
+#homeLabel {
+  width: 47%;
+vertical-align: middle;
+background-color: rgba(0, 0, 0, 0.3);
+height: 400px;
+padding-top: 65px;
+margin-top: 80px;
+margin-bottom: 50px;
 }

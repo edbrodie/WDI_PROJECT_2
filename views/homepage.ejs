@@ -1,10 +1,19 @@
 
+<div class="container" id="homeLabel">
+
 
 <h1>Welcome to the Vinyard!</h1>
 
 
 <% if (!locals.isAuthenticated){ %>
 
-  <h2> Please register to start adding your own wines!</h2>
+
+  <% if (!locals.isAuthenticated){ %>
+
+  <button class="logReg" id="log">  <a class="buttonText" href="/login">Login</a></button>
+    <button class="logReg" id="reg"> <a class="buttonText" href="/register">Register</a> </button>
+
+    <% } %>
 
   <% } %>
+</div>
