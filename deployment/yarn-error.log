@@ -1,0 +1,32 @@
+Arguments: 
+  /Users/edwardbrodie/.nvm/versions/node/v8.4.0/bin/node /usr/local/Cellar/yarn/1.1.0/libexec/bin/yarn.js add forever
+
+PATH: 
+  /Users/edwardbrodie/.rbenv/shims:/Users/edwardbrodie/.rbenv/shims:/Users/edwardbrodie/.nvm/versions/node/v8.4.0/bin:/Users/edwardbrodie/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+Yarn version: 
+  1.1.0
+
+Node version: 
+  8.4.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/edwardbrodie/development/WDI_PROJECT_2/deployment/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.1.0/libexec/lib/cli.js:764:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.1.0/libexec/lib/cli.js:92:30)
+      at /usr/local/Cellar/yarn/1.1.0/libexec/lib/cli.js:103:13
+      at <anonymous>
